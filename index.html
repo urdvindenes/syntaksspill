@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntaksmesterne: Setningskontrollen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Syntaksmesterne: Fraseraketten!</h1>
+        <h2>Runde 1: Setningskontrollen</h2>
+
+        <div id="rocket-area">
+            <div id="rocket-body">🚀</div>
+            <div id="fuel-gauge">
+                <div id="fuel-level"></div>
+            </div>
+            <p>Drivstoff: <span id="fuel-percentage">0</span>%</p>
+        </div>
+
+        <div id="game-area">
+            <p>Er dette en fullstendig setning (subjekt + finitt verbal)?</p>
+            <div id="utterance-display">
+                Trykk "Start" for å begynne!
+            </div>
+            <div id="controls">
+                <button id="approve-btn" class="game-button" disabled>✔️ Ja (setning)</button>
+                <button id="reject-btn" class="game-button" disabled>❌ Nei (setningsfragment)</button>
+            </div>
+             <button id="start-btn">Start</button>
+        </div>
+
+        <div id="feedback-area">
+            <p>Poeng: <span id="score">0</span></p>
+            <p id="feedback-message"></p>
+        </div>
+
+        <div id="game-over-screen" style="display: none;">
+            <h2>Spillet er over!</h2>
+            <p>Din endelige poengsum: <span id="final-score">0</span></p>
+            <p>Raketten fikk <span id="final-fuel">0</span>% drivstoff!</p>
+            <p id="launch-message"></p>
+            <button id="restart-btn">Spill Igjen</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
